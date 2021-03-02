@@ -6,8 +6,8 @@ const renamer = (array, newname) => {
     /*
         - take in all the files in a directory
     */
-    for (var i = 1; i < array.length; i++) {
-        array[i] = `${newname}-${i}`;
+    for (var i = 0; i < array.length; i++) {
+        array[i] = `${newname}-${i+1}`;
     }
     console.log(array);
 }
